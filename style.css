@@ -6,6 +6,11 @@
   align-items: center;
   list-style-type: none;
 }
+@media (min-width: 600px) {
+  .menu {
+    flex-direction: row;
+  }
+}
 .menu li a {
   display: block;
   padding: 1rem 0.5rem;
@@ -17,11 +22,21 @@
 .menu .toggle a {
   text-decoration: none;
 }
+@media (min-width: 600px) {
+  .menu .toggle {
+    display: none;
+  }
+}
 .menu .menu-item {
   order: 2;
   width: 100%;
   text-align: center;
   display: none;
+}
+@media (min-width: 600px) {
+  .menu .menu-item {
+    display: block;
+  }
 }
 
 .menu.show .menu-item {
