@@ -1,5 +1,6 @@
 .menu {
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -11,11 +12,23 @@
 }
 .menu .toggle {
   order: 1;
+  font-style: normal;
+}
+.menu .toggle a {
+  text-decoration: none;
 }
 .menu .menu-item {
   order: 2;
   width: 100%;
   text-align: center;
+  display: none;
+}
+
+.menu.show .menu-item {
+  display: block;
+}
+
+.menu-btn {
   display: none;
 }
 
