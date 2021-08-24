@@ -7,6 +7,6 @@ by Mason Aviles
 [See Deployed Mockup](https://mystifying-archimedes-be89df.netlify.app)
 
 Tech used:
-- node sass
+- `node sass`
 - design mock from Figma
 - deployed to [Netlify](https://mystifying-archimedes-be89df.netlify.app)
