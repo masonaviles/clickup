@@ -8,3 +8,4 @@ by Mason Aviles
 
 Tech used:
 - node sass
+- deployed to [Netlify](https://mystifying-archimedes-be89df.netlify.app)
