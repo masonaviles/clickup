@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    li a {
+       display: block;
+       padding: 1rem 0.5rem; 
+    }
+
+    .toggle {
+        order: 1;
+    }
+
+    .menu-item {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+}
