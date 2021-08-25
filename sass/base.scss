@@ -1,6 +1,8 @@
-main, footer {
-    @include size-at('medium') {
-        margin: 0 15rem;
+main, footer, header {
+    @include size-at('large') {
+        width: 1120px;
+        display:block;
+        margin: 0 auto;
     }
 }
 

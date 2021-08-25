@@ -86,9 +86,11 @@ a.btn.accent:hover, .btn.accent:hover {
   border-color: #6625c0;
 }
 
-@media (min-width: 600px) {
-  main, footer {
-    margin: 0 15rem;
+@media (min-width: 1200px) {
+  main, footer, header {
+    width: 1120px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -137,7 +139,22 @@ nav a {
 
 nav {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   padding-top: 3rem;
+}
+@media (min-width: 600px) {
+  nav {
+    padding-left: 25rem;
+  }
+}
+@media (min-width: 600px) {
+  nav li {
+    margin-right: 2rem;
+  }
+}
+nav .btn {
+  align-self: flex-end;
 }
 
 .menu {

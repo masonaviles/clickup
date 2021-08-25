@@ -1,6 +1,19 @@
 nav {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     padding-top: 3rem;
+    @include size-at('medium') {
+        padding-left: 25rem;
+    }
+    li {
+        @include size-at('medium') {
+            margin-right: 2rem;
+        }
+    }
+    .btn {
+        align-self: flex-end;
+    }
 }
 
 .menu {
