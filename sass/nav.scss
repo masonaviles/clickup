@@ -44,4 +44,7 @@
 
 .menu-btn {
     display: none;
+    @include size-at('medium') {
+        display: block;
+    }
 }
