@@ -52,6 +52,30 @@ table {
   border-spacing: 0;
 }
 
+button,
+a.btn, .btn {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  color: #212353;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Droid Sans";
+  font-size: 1rem;
+  line-height: 0.9em;
+  padding: 10px;
+  transition: all 0.25s;
+}
+button:hover,
+a.btn:hover, .btn:hover {
+  background-color: #e6e6e6;
+  border-color: #cccccc;
+}
+button:active,
+a.btn:active, .btn:active {
+  background-color: #cccccc;
+  border-color: #b3b3b3;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -104,6 +128,28 @@ table {
   .menu-btn {
     display: block;
   }
+}
+
+nav .logo {
+  position: relative;
+}
+nav .logo .purple-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 240px;
+  top: 74px;
+  background: #9C69E2;
+  border-radius: 20px;
+}
+nav .logo .pink-pill {
+  position: absolute;
+  width: 20px;
+  height: 35px;
+  left: 269px;
+  top: 59px;
+  background: #F063B8;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
