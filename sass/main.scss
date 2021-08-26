@@ -9,6 +9,9 @@ main {
             width: 34%;
             margin-bottom: 2rem;
         }
+        .btn {
+            width: 7rem;
+        }
         .hero-img {
             position: absolute;
             width: 885px;
@@ -102,11 +105,8 @@ main {
                 left: 6rem;
                 top: 0rem;
 
-                /* 5 */
-
-                background: #68C9BA;
-                opacity: 0.1;
-                border-radius: 50px;
+                background: url('assets/search.png');
+                background-repeat: no-repeat;
             }
             .img {
                 position: absolute;
@@ -127,11 +127,8 @@ main {
                 left: 6rem;
                 top: 0rem;
 
-                /* 3 */
-
-                background: #9C69E2;
-                opacity: 0.1;
-                border-radius: 20px;
+                background: url('assets/access.png');
+                background-repeat: no-repeat;
             }
             .img {
                 position: absolute;
@@ -152,11 +149,8 @@ main {
                 left: 6rem;
                 top: 0rem;
 
-                /* 4 */
-
-                background: #F063B8;
-                opacity: 0.1;
-                border-radius: 50px;
+                background: url('assets/print.png');
+                background-repeat: no-repeat;
             }
             .img {
                 position: absolute;
@@ -177,11 +171,8 @@ main {
                 left: 6rem;
                 top: 0rem;
 
-                /* Blue 2 */
-
-                background: #2D9CDB;
-                opacity: 0.1;
-                border-radius: 20px;
+                background: url('assets/security.png');
+                background-repeat: no-repeat;
             }
             .img {
                 position: absolute;
@@ -207,24 +198,61 @@ main {
         }
         .carosel {
             display: flex;
+            margin-bottom: 4rem;
             .quote-card {
                 margin-right: 2rem;
                 position: relative;
                 .overlay {
                     position: absolute;
                     top: 0rem;
-                    width: 14rem;
-                    height: 24.6rem;
+                    right: 0rem;
+                    width: 17rem;
+                    height: 25rem;
                     background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
+                    z-index: 5;
                 }
             }
             .quote-card:nth-child(2) {
                 width: 398px;
-                height: 330px;
+                height: 15rem;
                 margin-right: 2px;
                 border-radius: 20px 0 0 20px;
                 border: 1px solid #9C69E2;
                 box-shadow: 0px 20px 0px #9763e0;
+            }
+        }
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .dots {
+                display: flex;
+                align-items: center;
+                &:hover {
+                    cursor: pointer;
+                }
+                img {
+                    margin-right: 0.5rem
+                }
+            }
+            .arrows {
+                display: flex;
+                align-items: center;
+                margin-right: 4rem;
+                position: relative;
+                &:hover {
+                    cursor: pointer;
+                }
+                img:nth-child(2) {
+                    position: relative;
+                    margin-right: 0.5rem;
+                    right: 5px;
+                    top: 0px;
+                }
+                img:nth-child(3) {
+                    position: relative;
+                    right: -5px;
+                }
             }
         }
         .rect {

@@ -2,12 +2,15 @@
 @import 'utils/reset';
 @import 'utils/breakpoints';
 @import 'utils/variables';
-@import 'utils/buttons';
 @import 'utils/patterns';
+@import 'utils/base';
 
-//components
-@import 'components/card';
+// components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/vectors';
 
-@import 'base';
+// pages / page sections
 @import 'nav';
 @import 'main';
+@import 'footer';

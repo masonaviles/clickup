@@ -13,6 +13,11 @@ p, a {
     font-size: 18px;
     line-height: 28.8px;
     text-decoration: none;
+    transition: all .25s;
+}
+
+a:hover {
+    font-weight: 800;
 }
 
 h1, h2, h3, .h3, h4, h5, h6 {
