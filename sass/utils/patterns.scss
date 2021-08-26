@@ -16,3 +16,13 @@
 //         <p>The place to store various data that you can access at any time through the internet  and where you can carry it. This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. </p>
 //     </div>
 // </div>
+
+.two-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    .split {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}

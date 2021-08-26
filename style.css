@@ -122,6 +122,16 @@ a.btn.btn-purple:hover, .btn.btn-purple:hover {
   width: 50%;
 }
 
+.two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.two-grid .split {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 @media (min-width: 1200px) {
   main, footer, header {
     width: 1120px;
@@ -307,12 +317,10 @@ main .hero .hero-img {
   background-repeat: no-repeat;
 }
 main .highlight {
-  background: rgba(240, 99, 184, 0.15);
-  border-radius: 50px;
   padding-top: 7rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   margin-top: 3rem;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 main .highlight p {
   margin-top: 2rem;
@@ -327,6 +335,73 @@ main .highlight .highlight-img {
   background: url("assets/image2.png");
   background-size: 80%;
   background-repeat: no-repeat;
+}
+main .highlight .rect {
+  position: absolute;
+  width: 1117px;
+  height: 560px;
+  left: 240px;
+  top: 903.18px;
+  background: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+}
+main .features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .features h3, main .features h5, main .features h6 {
+  margin-top: 10rem;
+}
+main .features > p {
+  text-align: center;
+  width: 55%;
+  margin-top: 2rem;
+}
+main .features .search .rect {
+  position: absolute;
+  width: 442px;
+  height: 358px;
+  left: 328.29px;
+  top: 1873px;
+  /* 5 */
+  background: #68C9BA;
+  opacity: 0.1;
+  border-radius: 50px;
+}
+main .features .access .rect {
+  position: absolute;
+  width: 442px;
+  height: 358px;
+  left: 915.28px;
+  top: 1873px;
+  /* 3 */
+  background: #9C69E2;
+  opacity: 0.1;
+  border-radius: 20px;
+}
+main .features .print .rect {
+  position: absolute;
+  width: 442px;
+  height: 358px;
+  left: 328.29px;
+  top: 2281px;
+  /* 4 */
+  background: #F063B8;
+  opacity: 0.1;
+  border-radius: 50px;
+}
+main .features .security .rect {
+  position: absolute;
+  width: 442px;
+  height: 358px;
+  left: 915.28px;
+  top: 2281px;
+  /* Blue 2 */
+  background: #2D9CDB;
+  opacity: 0.1;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
