@@ -272,6 +272,17 @@ a.btn.btn-pink:hover, .btn.btn-pink:hover {
   border-radius: 20px;
 }
 
+.divider .divide {
+  position: absolute;
+  width: 3000px;
+  height: 2px;
+  left: 0px;
+  top: 3648px;
+  /* 3 */
+  background: #9C69E2;
+  opacity: 0.2;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -613,17 +624,9 @@ main .testimonials .rect {
   border-radius: 50px;
 }
 
-.divider .divide {
-  position: absolute;
-  width: 2000px;
-  height: 2px;
-  left: 0px;
-  top: 3648px;
-  /* 3 */
-  background: #9C69E2;
-  opacity: 0.2;
+footer {
+  font-family: "Avenir", "sans-serif";
 }
-
 footer .try {
   margin: 4rem 0;
   padding-top: 5rem;
@@ -643,6 +646,60 @@ footer .try .btn-pink {
 }
 footer .try .btn-arrow {
   width: 10rem;
+}
+footer h6 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 800;
+}
+footer .main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+footer .main-footer div:nth-child(1) h6 {
+  margin-left: 4rem;
+  margin-bottom: 5rem;
+}
+footer .main-footer div:nth-child(1) .address {
+  margin-bottom: 2rem;
+}
+footer .main-footer div:nth-child(1) .contact p {
+  font-size: 1rem;
+  line-height: 28.8px;
+  font-weight: 400;
+  letter-spacing: 1%;
+}
+footer .footer-links span, footer .footer-social span {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 25.6px;
+  font-weight: 900;
+  margin-bottom: 4rem;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-links a {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 40px;
+}
+footer .footer-social > div {
+  display: flex;
+}
+footer .footer-social > div a {
+  margin-right: 1rem;
+}
+footer .footer-social .circle div {
+  background: #212353;
+  opacity: 0.1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
