@@ -1,11 +1,7 @@
 main {
-    section {
-        margin: 3rem 0;
-    }
     .hero {
         //height: 700px;
-        margin-top: 9rem;
-        margin-bottom: 9rem;
+        padding: 10rem 0;
         h1 {
             margin-bottom: 2rem;
         }
@@ -20,14 +16,31 @@ main {
             left: 603px;
             top: 333px;
             background: url('assets/image1.png');
-            background-size: 80%;
+            background-size: 90%;
             background-repeat: no-repeat;
         }
     }
     .highlight {
+        background: rgba(240, 99, 184, 0.15);
+        border-radius: 50px;
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+
         p {
             margin-top: 2rem;
             width: 85%;
+        }
+        .highlight-img {
+            position: absolute;
+            width: 477px;
+            height: 504px;
+            left: 251px;
+            top: 935px;
+            background: url('assets/image2.png');
+            background-size: 80%;
+            background-repeat: no-repeat;
         }
     }
 }

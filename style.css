@@ -112,12 +112,12 @@ a.btn.btn-purple:hover, .btn.btn-purple:hover {
   transform: rotate(90deg);
 }
 
-.right-split {
+.split {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.right-split .split, .right-split .right {
+.split .left, .split .right {
   flex-grow: 1;
   width: 50%;
 }
@@ -286,12 +286,8 @@ header a.btn {
   margin-top: 3rem;
 }
 
-main section {
-  margin: 3rem 0;
-}
 main .hero {
-  margin-top: 9rem;
-  margin-bottom: 9rem;
+  padding: 10rem 0;
 }
 main .hero h1 {
   margin-bottom: 2rem;
@@ -307,12 +303,30 @@ main .hero .hero-img {
   left: 603px;
   top: 333px;
   background: url("assets/image1.png");
-  background-size: 80%;
+  background-size: 90%;
   background-repeat: no-repeat;
+}
+main .highlight {
+  background: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
 }
 main .highlight p {
   margin-top: 2rem;
   width: 85%;
+}
+main .highlight .highlight-img {
+  position: absolute;
+  width: 477px;
+  height: 504px;
+  left: 251px;
+  top: 935px;
+  background: url("assets/image2.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
