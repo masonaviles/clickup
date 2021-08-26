@@ -60,14 +60,14 @@ main {
         align-items: center;
 
         h3 {
-            margin-top: 11rem;
+            margin-top: 8rem;
         }
 
         > p {
             text-align: center;
             width: 55%;
             margin-top: 4rem;
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
         }
 
         .split .right {
@@ -83,6 +83,7 @@ main {
                 font-size: 1rem;
                 line-height: 25.6px;
                 font-weight: 400;
+                width: 80%;
             }
             a {
                 position: absolute;
@@ -191,6 +192,28 @@ main {
 
                 background: url('assets/image6.png');
             }
+        }
+    }
+    .testimonials {
+        position: relative;
+        margin-top: 9rem;
+        padding-left: 6rem;
+        h5 {
+            color: $white;
+            padding-top: 6rem;
+        }
+        .rect {
+            position: absolute;
+            width: 1118px;
+            height: 709px;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+
+            /* 4 */
+
+            background: $color-purple;
+            border-radius: 50px;
         }
     }
 }

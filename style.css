@@ -344,13 +344,13 @@ main .features {
   align-items: center;
 }
 main .features h3, main .features h5, main .features h6 {
-  margin-top: 11rem;
+  margin-top: 8rem;
 }
 main .features > p {
   text-align: center;
   width: 55%;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 main .features .split .right {
   display: flex;
@@ -366,6 +366,7 @@ main .features .split .right p {
   font-size: 1rem;
   line-height: 25.6px;
   font-weight: 400;
+  width: 80%;
 }
 main .features .split .right a {
   position: absolute;
@@ -460,6 +461,26 @@ main .features .security .img {
   left: 0rem;
   top: 5rem;
   background: url("assets/image6.png");
+}
+main .testimonials {
+  position: relative;
+  margin-top: 9rem;
+  padding-left: 6rem;
+}
+main .testimonials h5 {
+  color: #fff;
+  padding-top: 6rem;
+}
+main .testimonials .rect {
+  position: absolute;
+  width: 1118px;
+  height: 709px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  /* 4 */
+  background: #9C69E2;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
