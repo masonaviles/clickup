@@ -202,6 +202,9 @@ a.btn.btn-pink:hover, .btn.btn-pink:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 1rem;
+  line-height: 25.6px;
+  font-weight: 800;
 }
 .link-arrow img:nth-child(1) {
   margin-left: 1rem;
@@ -477,8 +480,8 @@ main .features .search .img {
   position: absolute;
   width: 232px;
   height: 211px;
-  left: 0rem;
-  top: 5rem;
+  left: -1rem;
+  top: 6rem;
   background: url("assets/image3.png");
 }
 main .features .access {
@@ -497,8 +500,8 @@ main .features .access .img {
   position: absolute;
   width: 241px;
   height: 185px;
-  left: 0rem;
-  top: 5rem;
+  left: -1rem;
+  top: 6rem;
   background: url("assets/image4.png");
 }
 main .features .print {
@@ -517,8 +520,8 @@ main .features .print .img {
   position: absolute;
   width: 245px;
   height: 181px;
-  left: 0rem;
-  top: 5rem;
+  left: -1rem;
+  top: 6rem;
   background: url("assets/image5.png");
 }
 main .features .security {
@@ -537,8 +540,8 @@ main .features .security .img {
   position: absolute;
   width: 230px;
   height: 201px;
-  left: 0rem;
-  top: 5rem;
+  left: -1rem;
+  top: 6rem;
   background: url("assets/image6.png");
 }
 main .testimonials {
