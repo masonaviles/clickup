@@ -1,14 +1,18 @@
 button,
 a.btn, .btn {
     background-color: $white;
-    border: 1px solid darken($white, 15%);
     color: $color-text-button;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     cursor: pointer;
     display: inline-block;
-    font-family: $font-name;
+    font-family: $font-body;
     font-size: 1rem;
-    line-height: .9em;
-    padding: 10px;
+    line-height: 25.6px;
+    border-radius: 50px;
+    height: 60px;
+    width: 210px;
+    text-align: center;
+    line-height: 4rem;
     transition: all .25s;
 
     &:hover {
@@ -30,22 +34,27 @@ a.btn, .btn {
             border-color: darken($color-purple, 20%);
         }
     }
+}
 
-    // &.flat {
-    //     background-color: $color-background;
-    //     border-color: darken($color-background, 15%);
+.arrow-line {
+    position: absolute;
+    width: 20px;
+    height: 0px;
+    left: 1311px;
+    top: 77px;
 
-    //     &:hover {
-    //         border-color: darken($color-background, 30%);
-    //     }
+    border: 2px solid #9C69E2;
+    box-sizing: border-box;
+}
 
-    //     &:disabled {
-    //         border-color: darken($color-background, 15%);
-    //         color: lighten($color-text, 10%);
-    //     }
+.arrow-chev {
+    position: absolute;
+    width: 14px;
+    height: 6px;
+    left: 627.29px;
+    top: 2178px;
 
-    //     &:focus {
-    //         border: 1px solid darken($color-background, 40%);
-    //     }
-    // }
+    border: 2px solid #9C69E2;
+    box-sizing: border-box;
+    transform: rotate(90deg);
 }
