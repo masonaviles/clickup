@@ -35,6 +35,16 @@ a.btn, .btn {
             border-color: darken($color-purple, 20%);
         }
     }
+    &.btn-pink {
+        color: $white;
+        background-color: $color-pink;
+        border-color: darken($color-pink, 15%);
+
+        &:hover {
+            background-color: darken($color-pink, 10%);
+            border-color: darken($color-pink, 20%);
+        }
+    }
 }
 
 .arrow-line {

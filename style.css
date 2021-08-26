@@ -90,6 +90,17 @@ a.btn.btn-purple:hover, .btn.btn-purple:hover {
   background-color: #803eda;
   border-color: #6625c0;
 }
+button.btn-pink,
+a.btn.btn-pink, .btn.btn-pink {
+  color: #fff;
+  background-color: #F063B8;
+  border-color: #e91d98;
+}
+button.btn-pink:hover,
+a.btn.btn-pink:hover, .btn.btn-pink:hover {
+  background-color: #ec34a3;
+  border-color: #d8158b;
+}
 
 .arrow-line {
   position: absolute;
@@ -161,6 +172,28 @@ a.btn.btn-purple:hover, .btn.btn-purple:hover {
   line-height: 32.4px;
 }
 
+.logo {
+  position: relative;
+}
+.logo .purple-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 74px;
+  background: #9C69E2;
+  border-radius: 20px;
+}
+.logo .pink-pill {
+  position: absolute;
+  width: 20px;
+  height: 35px;
+  left: 29px;
+  top: 59px;
+  background: #F063B8;
+  border-radius: 20px;
+}
+
 @media (min-width: 1200px) {
   main, footer, header {
     width: 1120px;
@@ -221,28 +254,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-header .logo {
-  position: relative;
-}
-header .logo .purple-dot {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 0px;
-  top: 74px;
-  background: #9C69E2;
-  border-radius: 20px;
-}
-header .logo .pink-pill {
-  position: absolute;
-  width: 20px;
-  height: 35px;
-  left: 29px;
-  top: 59px;
-  background: #F063B8;
-  border-radius: 20px;
 }
 
 nav {
@@ -588,6 +599,10 @@ main .testimonials .rect {
   /* 3 */
   background: #9C69E2;
   opacity: 0.2;
+}
+
+footer .try {
+  margin: 4rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

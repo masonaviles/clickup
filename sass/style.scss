@@ -5,9 +5,12 @@
 @import 'utils/buttons';
 @import 'utils/patterns';
 
-//components
-@import 'components/card';
+// components
+@import 'components/cards';
+@import 'components/vectors';
 
+// pages / page sections
 @import 'base';
 @import 'nav';
 @import 'main';
+@import 'footer';

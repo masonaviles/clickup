@@ -4,34 +4,6 @@ header {
     justify-content: space-between;
 }
 
-
-header {
-    .logo {
-        position: relative;
-
-        .purple-dot {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            left: 0px;
-            top: 74px;
-            
-            background: $color-purple;
-            border-radius: 20px;
-        }
-        .pink-pill {
-            position: absolute;
-            width: 20px;
-            height: 35px;
-            left: 29px;
-            top: 59px;
-
-            background: $color-pink;
-            border-radius: 20px;
-        }
-    }
-}
-
 nav {
     display: flex;
     flex-direction: row;
