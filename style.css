@@ -525,9 +525,11 @@ main .testimonials .carosel .quote-card {
 main .testimonials .carosel .quote-card .overlay {
   position: absolute;
   top: 0rem;
-  width: 23rem;
-  height: 21rem;
+  right: 0rem;
+  width: 17rem;
+  height: 25rem;
   background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
+  z-index: 5;
 }
 main .testimonials .carosel .quote-card:nth-child(2) {
   width: 398px;
