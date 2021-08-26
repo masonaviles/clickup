@@ -101,17 +101,6 @@ a.btn.btn-purple:hover, .btn.btn-purple:hover {
   box-sizing: border-box;
 }
 
-.arrow-chev {
-  position: absolute;
-  width: 14px;
-  height: 6px;
-  left: 627.29px;
-  top: 2178px;
-  border: 2px solid #9C69E2;
-  box-sizing: border-box;
-  transform: rotate(90deg);
-}
-
 .split {
   display: flex;
   flex-direction: row;
@@ -297,6 +286,7 @@ header a.btn {
 }
 
 main .hero {
+  position: relative;
   padding: 10rem 0;
 }
 main .hero h1 {
@@ -310,13 +300,15 @@ main .hero .hero-img {
   position: absolute;
   width: 885px;
   height: 468px;
-  left: 603px;
-  top: 333px;
+  left: 21rem;
+  top: 16rem;
   background: url("assets/image1.png");
-  background-size: 90%;
+  background-size: 100%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 main .highlight {
+  position: relative;
   padding-top: 7rem;
   padding-bottom: 5rem;
   margin-top: 3rem;
@@ -330,18 +322,18 @@ main .highlight .highlight-img {
   position: absolute;
   width: 477px;
   height: 504px;
-  left: 251px;
-  top: 935px;
+  left: 2rem;
+  top: 1rem;
   background: url("assets/image2.png");
-  background-size: 80%;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 main .highlight .rect {
   position: absolute;
   width: 1117px;
   height: 560px;
-  left: 240px;
-  top: 903.18px;
+  left: 0rem;
+  top: 0rem;
   background: rgba(240, 99, 184, 0.15);
   border-radius: 50px;
 }
@@ -352,12 +344,33 @@ main .features {
   align-items: center;
 }
 main .features h3, main .features h5, main .features h6 {
-  margin-top: 10rem;
+  margin-top: 11rem;
 }
 main .features > p {
   text-align: center;
   width: 55%;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+main .features .split .right {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 17rem;
+}
+main .features .split .right h4 {
+  margin-bottom: 2rem;
+}
+main .features .split .right p {
+  font-size: 1rem;
+  line-height: 25.6px;
+  font-weight: 400;
+}
+main .features .split .right a {
+  position: absolute;
+  bottom: 0;
+  align-self: baseline;
 }
 main .features .search .rect {
   position: absolute;
@@ -370,6 +383,14 @@ main .features .search .rect {
   opacity: 0.1;
   border-radius: 50px;
 }
+main .features .search .img {
+  position: absolute;
+  width: 232px;
+  height: 211px;
+  left: 239px;
+  top: 1946px;
+  background: url("assets/image3.png");
+}
 main .features .access .rect {
   position: absolute;
   width: 442px;
@@ -380,6 +401,14 @@ main .features .access .rect {
   background: #9C69E2;
   opacity: 0.1;
   border-radius: 20px;
+}
+main .features .access .img {
+  position: absolute;
+  width: 241px;
+  height: 185px;
+  left: 813px;
+  top: 1944px;
+  background: url("assets/image4.png");
 }
 main .features .print .rect {
   position: absolute;
@@ -392,6 +421,14 @@ main .features .print .rect {
   opacity: 0.1;
   border-radius: 50px;
 }
+main .features .print .img {
+  position: absolute;
+  width: 245px;
+  height: 181px;
+  left: 220px;
+  top: 2404px;
+  background: url("assets/image5.png");
+}
 main .features .security .rect {
   position: absolute;
   width: 442px;
@@ -402,6 +439,14 @@ main .features .security .rect {
   background: #2D9CDB;
   opacity: 0.1;
   border-radius: 20px;
+}
+main .features .security .img {
+  position: absolute;
+  width: 230px;
+  height: 201px;
+  left: 818px;
+  top: 2367px;
+  background: url("assets/image6.png");
 }
 
 /*# sourceMappingURL=style.css.map */
