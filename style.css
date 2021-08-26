@@ -112,6 +112,16 @@ a.btn.btn-purple:hover, .btn.btn-purple:hover {
   transform: rotate(90deg);
 }
 
+.right-split {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.right-split .split, .right-split .right {
+  flex-grow: 1;
+  width: 50%;
+}
+
 @media (min-width: 1200px) {
   main, footer, header {
     width: 1120px;
@@ -299,6 +309,10 @@ main .hero .hero-img {
   background: url("assets/image1.png");
   background-size: 80%;
   background-repeat: no-repeat;
+}
+main .highlight p {
+  margin-top: 2rem;
+  width: 85%;
 }
 
 /*# sourceMappingURL=style.css.map */
