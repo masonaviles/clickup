@@ -1,5 +1,20 @@
 footer {
     .try {
         margin: 4rem 0;
+        padding-top: 5rem;
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+        }
+        .btn-pink {
+            width: 7rem;
+            @include size-at('medium') {
+                margin-right: 2rem;
+            }
+        }
+        .btn-arrow {
+            width: 10rem;
+        }
     }
 }

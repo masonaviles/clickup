@@ -172,7 +172,7 @@ a.btn.btn-arrow img:nth-child(1), .btn.btn-arrow img:nth-child(1) {
 }
 button.btn-arrow img:nth-child(2),
 a.btn.btn-arrow img:nth-child(2), .btn.btn-arrow img:nth-child(2) {
-  margin-left: -0.3rem;
+  margin-left: -0.4rem;
 }
 button.btn-purple,
 a.btn.btn-purple, .btn.btn-purple {
@@ -615,7 +615,7 @@ main .testimonials .rect {
 
 .divider .divide {
   position: absolute;
-  width: 1600px;
+  width: 2000px;
   height: 2px;
   left: 0px;
   top: 3648px;
@@ -626,6 +626,23 @@ main .testimonials .rect {
 
 footer .try {
   margin: 4rem 0;
+  padding-top: 5rem;
+}
+footer .try .right {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+footer .try .btn-pink {
+  width: 7rem;
+}
+@media (min-width: 600px) {
+  footer .try .btn-pink {
+    margin-right: 2rem;
+  }
+}
+footer .try .btn-arrow {
+  width: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
