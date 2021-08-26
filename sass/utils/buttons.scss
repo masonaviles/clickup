@@ -10,7 +10,7 @@ a.btn, .btn {
     line-height: 25.6px;
     border-radius: 50px;
     height: 60px;
-    width: 210px;
+    padding: 0 3rem;
     text-align: center;
     line-height: 4rem;
     transition: all .25s;
@@ -25,7 +25,8 @@ a.btn, .btn {
         border-color: darken($white, 30%);
     }
 
-    &.accent {
+    &.btn-purple {
+        color: $white;
         background-color: $color-purple;
         border-color: darken($color-purple, 15%);
 

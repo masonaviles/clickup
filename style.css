@@ -64,7 +64,7 @@ a.btn, .btn {
   line-height: 25.6px;
   border-radius: 50px;
   height: 60px;
-  width: 210px;
+  padding: 0 3rem;
   text-align: center;
   line-height: 4rem;
   transition: all 0.25s;
@@ -79,13 +79,14 @@ a.btn:active, .btn:active {
   background-color: #cccccc;
   border-color: #b3b3b3;
 }
-button.accent,
-a.btn.accent, .btn.accent {
+button.btn-purple,
+a.btn.btn-purple, .btn.btn-purple {
+  color: #fff;
   background-color: #9C69E2;
   border-color: #7229d5;
 }
-button.accent:hover,
-a.btn.accent:hover, .btn.accent:hover {
+button.btn-purple:hover,
+a.btn.btn-purple:hover, .btn.btn-purple:hover {
   background-color: #803eda;
   border-color: #6625c0;
 }
@@ -273,6 +274,31 @@ nav .btn {
 header a.btn {
   align-self: center;
   margin-top: 3rem;
+}
+
+main section {
+  margin: 3rem 0;
+}
+main .hero {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+main .hero h1 {
+  margin-bottom: 2rem;
+}
+main .hero p {
+  width: 34%;
+  margin-bottom: 2rem;
+}
+main .hero .hero-img {
+  position: absolute;
+  width: 885px;
+  height: 468px;
+  left: 603px;
+  top: 333px;
+  background: url("assets/image1.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
