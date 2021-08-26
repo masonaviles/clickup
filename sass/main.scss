@@ -207,6 +207,7 @@ main {
         }
         .carosel {
             display: flex;
+            margin-bottom: 4rem;
             .quote-card {
                 margin-right: 2rem;
                 position: relative;
@@ -214,7 +215,7 @@ main {
                     position: absolute;
                     top: 0rem;
                     width: 23rem;
-                    height: 24.6rem;
+                    height: 21rem;
                     background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
                 }
             }
@@ -225,6 +226,34 @@ main {
                 border-radius: 20px 0 0 20px;
                 border: 1px solid #9C69E2;
                 box-shadow: 0px 20px 0px #9763e0;
+            }
+        }
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .dots {
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 0.5rem
+                }
+            }
+            .arrows {
+                display: flex;
+                align-items: center;
+                margin-right: 4rem;
+                position: relative;
+                img:nth-child(2) {
+                    position: relative;
+                    margin-right: 0.5rem;
+                    right: 5px;
+                    top: 0px;
+                }
+                img:nth-child(3) {
+                    position: relative;
+                    right: -5px;
+                }
             }
         }
         .rect {

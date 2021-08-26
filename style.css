@@ -137,6 +137,8 @@ a.btn.btn-purple:hover, .btn.btn-purple:hover {
 .quote-card img {
   border-radius: 50px;
   margin-right: 3rem;
+  width: 90px;
+  height: 90px;
 }
 .quote-card .card-title {
   font-size: 18px;
@@ -514,6 +516,7 @@ main .testimonials h5 {
 }
 main .testimonials .carosel {
   display: flex;
+  margin-bottom: 4rem;
 }
 main .testimonials .carosel .quote-card {
   margin-right: 2rem;
@@ -523,7 +526,7 @@ main .testimonials .carosel .quote-card .overlay {
   position: absolute;
   top: 0rem;
   width: 23rem;
-  height: 24.6rem;
+  height: 21rem;
   background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
 }
 main .testimonials .carosel .quote-card:nth-child(2) {
@@ -533,6 +536,34 @@ main .testimonials .carosel .quote-card:nth-child(2) {
   border-radius: 20px 0 0 20px;
   border: 1px solid #9C69E2;
   box-shadow: 0px 20px 0px #9763e0;
+}
+main .testimonials .pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .testimonials .pagination .dots {
+  display: flex;
+  align-items: center;
+}
+main .testimonials .pagination .dots img {
+  margin-right: 0.5rem;
+}
+main .testimonials .pagination .arrows {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+  position: relative;
+}
+main .testimonials .pagination .arrows img:nth-child(2) {
+  position: relative;
+  margin-right: 0.5rem;
+  right: 5px;
+  top: 0px;
+}
+main .testimonials .pagination .arrows img:nth-child(3) {
+  position: relative;
+  right: -5px;
 }
 main .testimonials .rect {
   position: absolute;
