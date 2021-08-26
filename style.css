@@ -631,10 +631,22 @@ footer .try {
   margin: 4rem 0;
   padding-top: 5rem;
 }
+footer .try .left h6 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+footer .try .left p {
+  font-size: 18px;
+  line-height: 28.8px;
+  font-weight: 500;
+}
 footer .try .right {
   display: flex;
   justify-content: flex-end;
   flex-wrap: nowrap;
+  align-items: center;
 }
 footer .try .btn-pink {
   width: 7rem;

@@ -3,10 +3,24 @@ footer {
     .try {
         margin: 4rem 0;
         padding-top: 5rem;
+        .left {
+            h6 {
+                font-size: 40px;
+                line-height: 52px;
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+            p {
+                font-size: 18px;
+                line-height: 28.8px;
+                font-weight: 500;
+            }
+        }
         .right {
             display: flex;
             justify-content: flex-end;
             flex-wrap: nowrap;
+            align-items: center;
         }
         .btn-pink {
             width: 7rem;
