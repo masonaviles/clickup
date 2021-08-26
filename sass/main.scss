@@ -9,6 +9,9 @@ main {
             width: 34%;
             margin-bottom: 2rem;
         }
+        .btn {
+            width: 7rem;
+        }
         .hero-img {
             position: absolute;
             width: 885px;
@@ -225,6 +228,9 @@ main {
             .dots {
                 display: flex;
                 align-items: center;
+                &:hover {
+                    cursor: pointer;
+                }
                 img {
                     margin-right: 0.5rem
                 }
@@ -234,6 +240,9 @@ main {
                 align-items: center;
                 margin-right: 4rem;
                 position: relative;
+                &:hover {
+                    cursor: pointer;
+                }
                 img:nth-child(2) {
                     position: relative;
                     margin-right: 0.5rem;

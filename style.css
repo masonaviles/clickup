@@ -52,15 +52,100 @@ table {
   border-spacing: 0;
 }
 
+.split {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.split .left, .split .right {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.two-grid .split {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1200px) {
+  main, footer, header {
+    width: 1120px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+p, a {
+  font-family: "Avenir", "sans-serif";
+  color: #4B5D68;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28.8px;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+a:hover {
+  font-weight: 800;
+}
+
+h1, h2, h3, .h3, h4, h5, h6 {
+  font-family: "Helvetica", "sans-serif";
+  color: #212353;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 88px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+h3, h5, h6, .h3 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 31.2px;
+  font-weight: 400;
+}
+
+nav a {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #4B5D68;
+}
+nav a:hover {
+  color: #212353;
+  font-weight: 800;
+}
+
 button,
 a.btn, .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   color: #212353;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   cursor: pointer;
-  display: inline-block;
   font-family: "Avenir", "sans-serif";
   font-size: 1rem;
+  font-weight: 800;
   line-height: 25.6px;
   border-radius: 50px;
   height: 60px;
@@ -71,13 +156,23 @@ a.btn, .btn {
 }
 button:hover,
 a.btn:hover, .btn:hover {
-  background-color: #e6e6e6;
-  border-color: #cccccc;
+  background-color: #f1e9fb;
+  border-color: #6625c0;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.2);
+  font-weight: 800;
 }
 button:active,
 a.btn:active, .btn:active {
   background-color: #cccccc;
   border-color: #b3b3b3;
+}
+button.btn-arrow img:nth-child(1),
+a.btn.btn-arrow img:nth-child(1), .btn.btn-arrow img:nth-child(1) {
+  margin-left: 1rem;
+}
+button.btn-arrow img:nth-child(2),
+a.btn.btn-arrow img:nth-child(2), .btn.btn-arrow img:nth-child(2) {
+  margin-left: -0.3rem;
 }
 button.btn-purple,
 a.btn.btn-purple, .btn.btn-purple {
@@ -102,34 +197,17 @@ a.btn.btn-pink:hover, .btn.btn-pink:hover {
   border-color: #d8158b;
 }
 
-.arrow-line {
-  position: absolute;
-  width: 20px;
-  height: 0px;
-  left: 1311px;
-  top: 77px;
-  border: 2px solid #9C69E2;
-  box-sizing: border-box;
-}
-
-.split {
+.link-arrow {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
-.split .left, .split .right {
-  flex-grow: 1;
-  width: 50%;
+.link-arrow img:nth-child(1) {
+  margin-left: 1rem;
 }
-
-.two-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-}
-.two-grid .split {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.link-arrow img:nth-child(2) {
+  margin-left: -0.3rem;
 }
 
 .quote-card {
@@ -192,62 +270,6 @@ a.btn.btn-pink:hover, .btn.btn-pink:hover {
   top: 59px;
   background: #F063B8;
   border-radius: 20px;
-}
-
-@media (min-width: 1200px) {
-  main, footer, header {
-    width: 1120px;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-p, a {
-  font-family: "Avenir", "sans-serif";
-  color: #4B5D68;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28.8px;
-  text-decoration: none;
-}
-
-h1, h2, h3, .h3, h4, h5, h6 {
-  font-family: "Helvetica", "sans-serif";
-  color: #212353;
-}
-
-h1 {
-  font-size: 80px;
-  line-height: 88px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 40px;
-  line-height: 52px;
-  font-weight: 700;
-}
-
-h3, h5, h6, .h3 {
-  font-size: 40px;
-  line-height: 52px;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 24px;
-  line-height: 31.2px;
-  font-weight: 400;
-}
-
-nav a {
-  font-size: 16px;
-  line-height: 25.6px;
-  color: #4B5D68;
-}
-nav a:hover {
-  color: #212353;
-  font-weight: 800;
 }
 
 header {
@@ -346,6 +368,9 @@ main .hero h1 {
 main .hero p {
   width: 34%;
   margin-bottom: 2rem;
+}
+main .hero .btn {
+  width: 7rem;
 }
 main .hero .hero-img {
   position: absolute;
@@ -551,6 +576,9 @@ main .testimonials .pagination .dots {
   display: flex;
   align-items: center;
 }
+main .testimonials .pagination .dots:hover {
+  cursor: pointer;
+}
 main .testimonials .pagination .dots img {
   margin-right: 0.5rem;
 }
@@ -559,6 +587,9 @@ main .testimonials .pagination .arrows {
   align-items: center;
   margin-right: 4rem;
   position: relative;
+}
+main .testimonials .pagination .arrows:hover {
+  cursor: pointer;
 }
 main .testimonials .pagination .arrows img:nth-child(2) {
   position: relative;
