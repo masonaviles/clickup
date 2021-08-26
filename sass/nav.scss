@@ -1,10 +1,45 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+header {
+    .logo {
+        position: relative;
+
+        .purple-dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 0px;
+            top: 74px;
+            
+            background: $color-purple;
+            border-radius: 20px;
+        }
+        .pink-pill {
+            position: absolute;
+            width: 20px;
+            height: 35px;
+            left: 29px;
+            top: 59px;
+
+            background: $color-pink;
+            border-radius: 20px;
+        }
+    }
+}
+
 nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     padding-top: 3rem;
     @include size-at('medium') {
-        padding-left: 25rem;
+        align-self: flex-start;
+        padding-right: 15rem;
     }
     li {
         @include size-at('medium') {
@@ -67,29 +102,7 @@ nav {
     }
 }
 
-header {
-    .logo {
-        position: relative;
-
-        .purple-dot {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            left: 240px;
-            top: 74px;
-            
-            background: $color-purple;
-            border-radius: 20px;
-        }
-        .pink-pill {
-            position: absolute;
-            width: 20px;
-            height: 35px;
-            left: 269px;
-            top: 59px;
-
-            background: $color-pink;
-            border-radius: 20px;
-        }
-    }
+header a.btn {
+    align-self: center;
+    margin-top: 3rem;
 }

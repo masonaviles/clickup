@@ -137,6 +137,34 @@ nav a {
   line-height: 25.6px;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .logo {
+  position: relative;
+}
+header .logo .purple-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 74px;
+  background: #9C69E2;
+  border-radius: 20px;
+}
+header .logo .pink-pill {
+  position: absolute;
+  width: 20px;
+  height: 35px;
+  left: 29px;
+  top: 59px;
+  background: #F063B8;
+  border-radius: 20px;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -145,7 +173,8 @@ nav {
 }
 @media (min-width: 600px) {
   nav {
-    padding-left: 25rem;
+    align-self: flex-start;
+    padding-right: 15rem;
   }
 }
 @media (min-width: 600px) {
@@ -211,26 +240,9 @@ nav .btn {
   }
 }
 
-header .logo {
-  position: relative;
-}
-header .logo .purple-dot {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 240px;
-  top: 74px;
-  background: #9C69E2;
-  border-radius: 20px;
-}
-header .logo .pink-pill {
-  position: absolute;
-  width: 20px;
-  height: 35px;
-  left: 269px;
-  top: 59px;
-  background: #F063B8;
-  border-radius: 20px;
+header a.btn {
+  align-self: center;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
