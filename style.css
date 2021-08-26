@@ -372,12 +372,16 @@ main .features .split .right a {
   bottom: 0;
   align-self: baseline;
 }
+main .features .search {
+  position: relative;
+  margin-bottom: 3rem;
+}
 main .features .search .rect {
   position: absolute;
   width: 442px;
   height: 358px;
-  left: 328.29px;
-  top: 1873px;
+  left: 6rem;
+  top: 0rem;
   /* 5 */
   background: #68C9BA;
   opacity: 0.1;
@@ -387,16 +391,19 @@ main .features .search .img {
   position: absolute;
   width: 232px;
   height: 211px;
-  left: 239px;
-  top: 1946px;
+  left: 0rem;
+  top: 5rem;
   background: url("assets/image3.png");
+}
+main .features .access {
+  position: relative;
 }
 main .features .access .rect {
   position: absolute;
   width: 442px;
   height: 358px;
-  left: 915.28px;
-  top: 1873px;
+  left: 6rem;
+  top: 0rem;
   /* 3 */
   background: #9C69E2;
   opacity: 0.1;
@@ -406,16 +413,19 @@ main .features .access .img {
   position: absolute;
   width: 241px;
   height: 185px;
-  left: 813px;
-  top: 1944px;
+  left: 0rem;
+  top: 5rem;
   background: url("assets/image4.png");
+}
+main .features .print {
+  position: relative;
 }
 main .features .print .rect {
   position: absolute;
   width: 442px;
   height: 358px;
-  left: 328.29px;
-  top: 2281px;
+  left: 6rem;
+  top: 0rem;
   /* 4 */
   background: #F063B8;
   opacity: 0.1;
@@ -425,16 +435,19 @@ main .features .print .img {
   position: absolute;
   width: 245px;
   height: 181px;
-  left: 220px;
-  top: 2404px;
+  left: 0rem;
+  top: 5rem;
   background: url("assets/image5.png");
+}
+main .features .security {
+  position: relative;
 }
 main .features .security .rect {
   position: absolute;
   width: 442px;
   height: 358px;
-  left: 915.28px;
-  top: 2281px;
+  left: 6rem;
+  top: 0rem;
   /* Blue 2 */
   background: #2D9CDB;
   opacity: 0.1;
@@ -444,8 +457,8 @@ main .features .security .img {
   position: absolute;
   width: 230px;
   height: 201px;
-  left: 818px;
-  top: 2367px;
+  left: 0rem;
+  top: 5rem;
   background: url("assets/image6.png");
 }
 
