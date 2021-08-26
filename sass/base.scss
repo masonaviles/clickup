@@ -1,0 +1,60 @@
+main, footer, header {
+    @include size-at('large') {
+        width: 1120px;
+        display:block;
+        margin: 0 auto;
+    }
+}
+
+p, a {
+    font-family: $font-body;
+    color: $body-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.8px;
+    text-decoration: none;
+}
+
+h1, h2, h3, .h3, h4, h5, h6 {
+    font-family: $font-header;
+    color: $dark;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+h3, .h3 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 31.2px;
+    font-weight: 400;
+}
+
+h5, h6 {
+ @extend h3 ;
+}
+
+nav a {
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #4B5D68;
+
+    &:hover {
+        color: #212353;
+        font-weight: 800;
+    }
+}

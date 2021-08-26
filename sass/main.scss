@@ -1,0 +1,259 @@
+main {
+    .hero {
+        position: relative;
+        padding: 10rem 0;
+        h1 {
+            margin-bottom: 2rem;
+        }
+        p {
+            width: 34%;
+            margin-bottom: 2rem;
+        }
+        .hero-img {
+            position: absolute;
+            width: 885px;
+            height: 468px;
+            left: 21rem;
+            top: 16rem;
+            background: url('assets/image1.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+    }
+    .highlight {
+        position: relative;
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+
+        p {
+            margin-top: 2rem;
+            width: 85%;
+        }
+        .highlight-img {
+            position: absolute;
+            width: 477px;
+            height: 504px;
+            left: 2rem;
+            top: 1rem;
+            background: url('assets/image2.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .rect {
+            position: absolute;
+            width: 1117px;
+            height: 560px;
+            left: 0rem;
+            top: 0rem;
+
+            background: rgba(240, 99, 184, 0.15);
+            border-radius: 50px;
+        }
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            margin-top: 8rem;
+        }
+
+        > p {
+            text-align: center;
+            width: 55%;
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+        }
+
+        .split .right {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 17rem;
+            h4 {
+                margin-bottom: 2rem;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 25.6px;
+                font-weight: 400;
+                width: 80%;
+            }
+            a {
+                position: absolute;
+                bottom: 0;
+                align-self: baseline;
+            }
+        }
+
+        .search {
+            position: relative;
+            margin-bottom: 3rem;
+            .rect {
+                position: absolute;
+                width: 442px;
+                height: 358px;
+                left: 6rem;
+                top: 0rem;
+
+                /* 5 */
+
+                background: #68C9BA;
+                opacity: 0.1;
+                border-radius: 50px;
+            }
+            .img {
+                position: absolute;
+                width: 232px;
+                height: 211px;
+                left: 0rem;
+                top: 5rem;
+                
+                background: url('assets/image3.png');  
+            }
+        }
+        .access {
+            position: relative;
+            .rect {
+                position: absolute;
+                width: 442px;
+                height: 358px;
+                left: 6rem;
+                top: 0rem;
+
+                /* 3 */
+
+                background: #9C69E2;
+                opacity: 0.1;
+                border-radius: 20px;
+            }
+            .img {
+                position: absolute;
+                width: 241px;
+                height: 185px;
+                left: 0rem;
+                top: 5rem;
+
+                background: url('assets/image4.png');
+            }
+        }
+        .print {
+            position: relative;
+            .rect {
+                position: absolute;
+                width: 442px;
+                height: 358px;
+                left: 6rem;
+                top: 0rem;
+
+                /* 4 */
+
+                background: #F063B8;
+                opacity: 0.1;
+                border-radius: 50px;
+            }
+            .img {
+                position: absolute;
+                width: 245px;
+                height: 181px;
+                left: 0rem;
+                top: 5rem;
+
+                background: url('assets/image5.png');
+            }
+        }
+        .security {
+            position: relative;
+            .rect {
+                position: absolute;
+                width: 442px;
+                height: 358px;
+                left: 6rem;
+                top: 0rem;
+
+                /* Blue 2 */
+
+                background: #2D9CDB;
+                opacity: 0.1;
+                border-radius: 20px;
+            }
+            .img {
+                position: absolute;
+                width: 230px;
+                height: 201px;
+                left: 0rem;
+                top: 5rem;
+
+                background: url('assets/image6.png');
+            }
+        }
+    }
+    .testimonials {
+        position: relative;
+        margin-top: 9rem;
+        padding-left: 6rem;
+        height: 44rem;
+        margin-bottom: 10rem;
+        h5 {
+            color: $white;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .carosel {
+            display: flex;
+            .quote-card {
+                margin-right: 2rem;
+                position: relative;
+                .overlay {
+                    position: absolute;
+                    top: 0rem;
+                    width: 14rem;
+                    height: 24.6rem;
+                    background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
+                }
+            }
+            .quote-card:nth-child(2) {
+                width: 398px;
+                height: 330px;
+                margin-right: 2px;
+                border-radius: 20px 0 0 20px;
+                border: 1px solid #9C69E2;
+                box-shadow: 0px 20px 0px #9763e0;
+            }
+        }
+        .rect {
+            position: absolute;
+            width: 1118px;
+            height: 709px;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+
+            /* 4 */
+
+            background: $color-purple;
+            border-radius: 50px;
+        }
+    }
+}
+
+.divider {
+    .divide {
+        position: absolute;
+        width: 1600px;
+        height: 2px;
+        left: 0px;
+        top: 3648px;
+
+        /* 3 */
+
+        background: #9C69E2;
+        opacity: 0.2;
+    }
+}
