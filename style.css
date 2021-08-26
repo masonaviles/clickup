@@ -135,6 +135,11 @@ h4 {
 nav a {
   font-size: 16px;
   line-height: 25.6px;
+  color: #4B5D68;
+}
+nav a:hover {
+  color: #212353;
+  font-weight: 800;
 }
 
 header {
