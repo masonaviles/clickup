@@ -1,5 +1,81 @@
 footer {
+    font-family: $font-body;
     .try {
         margin: 4rem 0;
+        padding-top: 5rem;
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+        }
+        .btn-pink {
+            width: 7rem;
+            @include size-at('medium') {
+                margin-right: 2rem;
+            }
+        }
+        .btn-arrow {
+            width: 10rem;
+        }
+    }
+    h6 {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 800;
+    }
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+        div:nth-child(1) {
+            h6 {
+                margin-left: 4rem;
+                margin-bottom: 5rem;
+            }
+            .address{
+                margin-bottom: 2rem;
+            }
+            .contact p {
+                font-size: 1rem;
+                line-height: 28.8px;
+                font-weight: 400;
+                letter-spacing: 1%;
+            }
+        }
+    }
+    .footer-links, .footer-social {
+        span {
+            display: inline-block;
+            font-size: 1rem;
+            line-height: 25.6px;
+            font-weight: 900;
+            margin-bottom: 4rem;
+        }
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        a {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 40px;
+        }
+    }
+    .footer-social {
+        > div {
+            display: flex;
+            a {
+                margin-right: 1rem;
+            }
+        }
+        .circle div {
+            background: #212353;
+            opacity: 0.1;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
     }
 }
