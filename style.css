@@ -121,6 +121,33 @@ a.btn.btn-purple:hover, .btn.btn-purple:hover {
   padding-bottom: 3rem;
 }
 
+.quote-card {
+  font-family: "Avenir", "sans-serif";
+  background-color: #fff;
+  box-shadow: 0px 20px 0px #8a56da;
+  border-radius: 20px;
+  padding-top: 4rem;
+  padding-left: 4rem;
+}
+.quote-card .card-title {
+  font-size: 18px;
+  line-height: 28.8px;
+  font-weight: 800;
+  letter-spacing: 0.5%;
+}
+.quote-card span {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #9C69E2;
+  font-weight: 500;
+  letter-spacing: 1%;
+}
+.quote-card p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32.4px;
+}
+
 @media (min-width: 1200px) {
   main, footer, header {
     width: 1120px;
@@ -466,10 +493,35 @@ main .testimonials {
   position: relative;
   margin-top: 9rem;
   padding-left: 6rem;
+  height: 44rem;
+  margin-bottom: 10rem;
 }
 main .testimonials h5 {
   color: #fff;
   padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+main .testimonials .carosel {
+  display: flex;
+}
+main .testimonials .carosel .quote-card {
+  margin-right: 2rem;
+  position: relative;
+}
+main .testimonials .carosel .quote-card .overlay {
+  position: absolute;
+  top: 0rem;
+  width: 14rem;
+  height: 24.6rem;
+  background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
+}
+main .testimonials .carosel .quote-card:nth-child(2) {
+  width: 398px;
+  height: 330px;
+  margin-right: 2px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #9C69E2;
+  box-shadow: 0px 20px 0px #9763e0;
 }
 main .testimonials .rect {
   position: absolute;
@@ -481,6 +533,17 @@ main .testimonials .rect {
   /* 4 */
   background: #9C69E2;
   border-radius: 50px;
+}
+
+.divider .divide {
+  position: absolute;
+  width: 1600px;
+  height: 2px;
+  left: 0px;
+  top: 3648px;
+  /* 3 */
+  background: #9C69E2;
+  opacity: 0.2;
 }
 
 /*# sourceMappingURL=style.css.map */

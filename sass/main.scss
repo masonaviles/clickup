@@ -198,9 +198,34 @@ main {
         position: relative;
         margin-top: 9rem;
         padding-left: 6rem;
+        height: 44rem;
+        margin-bottom: 10rem;
         h5 {
             color: $white;
             padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .carosel {
+            display: flex;
+            .quote-card {
+                margin-right: 2rem;
+                position: relative;
+                .overlay {
+                    position: absolute;
+                    top: 0rem;
+                    width: 14rem;
+                    height: 24.6rem;
+                    background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
+                }
+            }
+            .quote-card:nth-child(2) {
+                width: 398px;
+                height: 330px;
+                margin-right: 2px;
+                border-radius: 20px 0 0 20px;
+                border: 1px solid #9C69E2;
+                box-shadow: 0px 20px 0px #9763e0;
+            }
         }
         .rect {
             position: absolute;
@@ -215,5 +240,20 @@ main {
             background: $color-purple;
             border-radius: 50px;
         }
+    }
+}
+
+.divider {
+    .divide {
+        position: absolute;
+        width: 1600px;
+        height: 2px;
+        left: 0px;
+        top: 3648px;
+
+        /* 3 */
+
+        background: #9C69E2;
+        opacity: 0.2;
     }
 }
