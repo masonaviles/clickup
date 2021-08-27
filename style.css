@@ -72,12 +72,22 @@ table {
 
 .split {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
+}
+@media (min-width: 1200px) {
+  .split {
+    flex-direction: row;
+  }
 }
 .split .left, .split .right {
   flex-grow: 1;
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .split .left, .split .right {
+    width: 50%;
+  }
 }
 
 .two-grid {
@@ -300,7 +310,7 @@ a.btn.btn-pink:hover, .btn.btn-pink:hover {
 
 .divider .divide {
   position: absolute;
-  width: 3000px;
+  width: 100%;
   height: 2px;
   left: 0px;
   top: 3648px;
@@ -405,7 +415,8 @@ header a.btn {
 
 main .hero {
   position: relative;
-  padding: 2rem 0;
+  padding: 4rem 0;
+  padding-bottom: 10rem;
 }
 @media (min-width: 1200px) {
   main .hero {
@@ -450,33 +461,72 @@ main .hero .hero-img {
 }
 main .highlight {
   position: relative;
-  padding-top: 7rem;
-  padding-bottom: 5rem;
-  margin-top: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 10rem;
   margin-bottom: 5rem;
+  background: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+}
+@media (min-width: 1200px) {
+  main .highlight {
+    margin-top: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    background: none;
+  }
+}
+main .highlight .right {
+  padding: 1rem;
+}
+@media (min-width: 1200px) {
+  main .highlight .right {
+    padding: 0;
+  }
 }
 main .highlight p {
   margin-top: 2rem;
-  width: 85%;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  main .highlight p {
+    width: 85%;
+  }
 }
 main .highlight .highlight-img {
-  position: absolute;
-  width: 477px;
-  height: 504px;
-  left: 2rem;
-  top: 1rem;
-  background: url("assets/image2.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  display: none;
+}
+@media (min-width: 1200px) {
+  main .highlight .highlight-img {
+    display: block;
+    position: absolute;
+    width: 477px;
+    height: 504px;
+    left: 2rem;
+    top: 1rem;
+    background: url("assets/image2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
 main .highlight .rect {
-  position: absolute;
-  width: 1117px;
-  height: 560px;
-  left: 0rem;
-  top: 0rem;
-  background: rgba(240, 99, 184, 0.15);
-  border-radius: 50px;
+  display: none;
+}
+@media (min-width: 1200px) {
+  main .highlight .rect {
+    display: block;
+    position: absolute;
+    width: 1117px;
+    height: 560px;
+    left: 0rem;
+    top: 0rem;
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+  }
 }
 main .features {
   display: flex;
