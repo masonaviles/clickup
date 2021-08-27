@@ -300,6 +300,11 @@ main {
         padding-left: 6rem;
         height: 44rem;
         margin-bottom: 10rem;
+        background: $color-purple;
+        border-radius: 50px;
+        @include size-at('large') {
+            background: none;
+        }
         h5 {
             color: $white;
             padding-top: 6rem;
@@ -322,6 +327,10 @@ main {
                 }
             }
             .quote-card:nth-child(2) {
+                display: none;
+                @include size-at('large') {
+                    display: block;
+                }
                 width: 398px;
                 height: 15rem;
                 margin-right: 2px;
@@ -365,6 +374,10 @@ main {
             }
         }
         .rect {
+            display: none;
+            @include size-at('large') {
+                display: block;
+            }
             position: absolute;
             width: 1118px;
             height: 709px;
