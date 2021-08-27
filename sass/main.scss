@@ -348,6 +348,7 @@ main {
             }
             .quote-card:nth-child(2) {
                 display: none;
+                padding-right: inherit;
                 @include size-at('large') {
                     display: block;
                 }

@@ -282,7 +282,7 @@ a.btn.btn-pink:hover, .btn.btn-pink:hover {
   .quote-card {
     flex-direction: row;
     padding-left: 4rem;
-    padding-right: 4rem;
+    padding-right: 2rem;
   }
 }
 .quote-card img {
@@ -840,6 +840,7 @@ main .testimonials .carosel .quote-card .overlay {
 }
 main .testimonials .carosel .quote-card:nth-child(2) {
   display: none;
+  padding-right: inherit;
   width: 398px;
   height: 15rem;
   margin-right: 2px;
