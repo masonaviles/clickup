@@ -25,15 +25,15 @@
 
 .divider {
     .divide {
-        position: absolute;
-        width: 3000px;
-        height: 2px;
-        left: 0px;
-        top: 3648px;
-
-        /* 3 */
-
         background: #9C69E2;
         opacity: 0.2;
+        position: relative;
+        width: 100%;
+        height: 2px;
+        @include size-at('large') {
+            position: absolute;
+            left: 0px;
+            top: 3648px;
+        }
     }
 }

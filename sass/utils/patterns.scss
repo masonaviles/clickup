@@ -1,10 +1,30 @@
+.mobile-only {
+    display: block;
+    @include size-at('large') {
+        display: none !important;
+    }
+}
+
+.large-only {
+    display: none;
+    @include size-at('large') {
+        display: block;
+    }
+}
+
 .split {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
+    @include size-at('large') {
+        flex-direction: row;
+    }
     .left, .right {
         flex-grow: 1;
-        width: 50%;
+        width: 100%;
+        @include size-at('large') {
+            width: 50%;
+        }
     }
 }
 

@@ -15,3 +15,14 @@ $breakpoints: (
         @warn "Not a valid breakpoint variable `#{$breakpoint}`. " + "Breakpoints are: #{map-keys($breakpoints)}.";
     }
 }
+
+@mixin max-at($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Not a valid breakpoint variable `#{$breakpoint}`. " + "Breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}

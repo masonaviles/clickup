@@ -2,16 +2,21 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    // @include max-at('medium') {
+    //     padding: 1rem;
+    // }
 }
 
 nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-top: 3rem;
+    width: 100%;
     @include size-at('medium') {
+        padding-top: 3rem;
         align-self: flex-start;
         padding-right: 15rem;
+        margin-left: 10rem;
     }
     li {
         @include size-at('medium') {
@@ -30,7 +35,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    @include size-at('medium') {
+    width: 100%;
+    @include size-at('large') {
         flex-direction: row;
     }
 
@@ -45,7 +51,7 @@ nav {
         a {
             text-decoration: none;
         }
-        @include size-at('medium') {
+        @include size-at('large') {
             display: none;
         }
     }
@@ -55,7 +61,7 @@ nav {
         width: 100%;
         text-align: center;
         display: none;
-        @include size-at('medium') {
+        @include size-at('large') {
             display: block;
         }
     }
@@ -77,4 +83,7 @@ nav {
 header a.btn {
     align-self: center;
     margin-top: 3rem;
+    @include size-at('medium') {
+        width: 10rem;
+    }
 }
