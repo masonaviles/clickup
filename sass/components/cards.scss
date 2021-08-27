@@ -2,14 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 15rem;
+    height: 17rem;
     font-family: $font-body;
     background-color: $white;
     box-shadow: 0px 20px 0px $card-shadow;
     border-radius: 20px;
-    padding-top: 4rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    @include size-at('medium') {
+        height: 15rem;
+        padding-top: 4rem;
+    }
+    @include size-at('large') {
+        flex-direction: row;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
     img {
         border-radius: 50px;
         margin-right: 3rem;
