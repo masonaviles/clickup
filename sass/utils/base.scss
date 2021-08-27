@@ -28,21 +28,23 @@ h1, h2, h3, .h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 80px;
-    line-height: 88px;
+    font-size: 64px;
+    line-height: 70px;
     font-weight: 700;
+    @include size-at('large') {
+        font-size: 80px;
+        line-height: 88px;
+    }
 }
 
-h2 {
-    font-size: 40px;
-    line-height: 52px;
+h2, h3, .h3 {
+    font-size: 30px;
+    line-height: 42px;
     font-weight: 700;
-}
-
-h3, .h3 {
-    font-size: 40px;
-    line-height: 52px;
-    font-weight: 700;
+    @include size-at('large') {
+        font-size: 40px;
+        line-height: 52px;
+    }
 }
 
 h4 {

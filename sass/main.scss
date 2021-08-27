@@ -3,6 +3,7 @@ main {
         position: relative;
         padding: 4rem 0;
         padding-bottom: 10rem;
+        overflow: hidden;
         @include size-at('large') {
             padding: 10rem 0;
         }
@@ -127,7 +128,11 @@ main {
             flex-direction: column;
             justify-content: flex-start;
             height: 17rem;
-            padding: 2rem;
+            padding: 2rem 0;
+            padding-left: 1rem;
+            @include size-at('medium') {
+                padding: 2rem;
+            }
             @include size-at('large') {
                 padding: 0;
             }
@@ -152,7 +157,10 @@ main {
             margin-bottom: 3rem;
             background: rgb(104, 201, 186, 0.1);
             border-radius: 20px;
-            margin-right: 1rem;
+            margin-right: 0rem;
+            @include size-at('medium') {
+                margin-right: 1rem;
+            }
             @include size-at('large') {
                 background: none;
                 margin-right: 0;
@@ -225,7 +233,12 @@ main {
             position: relative;
             background: rgb(240, 99, 184, 0.1);
             border-radius: 20px;
-            margin-right: 1rem;
+            margin-right: 0rem;
+            margin-bottom: 3rem;
+            @include size-at('medium')  {
+                margin-bottom: 0rem;
+                margin-right: 1rem;
+            }
             @include size-at('large') {
                 background: none;
                 margin-right: 0;

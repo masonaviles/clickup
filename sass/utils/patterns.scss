@@ -39,8 +39,12 @@
 
 .two-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+    @include size-at('medium') {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
     .split {
         padding-top: 3rem;
         padding-bottom: 3rem;
