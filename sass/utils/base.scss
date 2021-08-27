@@ -1,5 +1,7 @@
 main, footer, header {
+    padding: 2rem;
     @include size-at('large') {
+        padding: 0;
         width: 1120px;
         display:block;
         margin: 0 auto;

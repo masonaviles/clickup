@@ -1,3 +1,17 @@
+.mobile-only {
+    display: block;
+    @include size-at('large') {
+        display: none !important;
+    }
+}
+
+.large-only {
+    display: none;
+    @include size-at('large') {
+        display: block;
+    }
+}
+
 .split {
     display: flex;
     flex-direction: row;
