@@ -535,7 +535,12 @@ main .features {
   align-items: center;
 }
 main .features h3, main .features h5, main .features h6 {
-  margin-top: 8rem;
+  margin-top: 2rem;
+}
+@media (min-width: 1200px) {
+  main .features h3, main .features h5, main .features h6 {
+    margin-top: 8rem;
+  }
 }
 main .features > p {
   text-align: center;
@@ -549,6 +554,12 @@ main .features .split .right {
   flex-direction: column;
   justify-content: flex-start;
   height: 17rem;
+  padding: 2rem;
+}
+@media (min-width: 1200px) {
+  main .features .split .right {
+    padding: 0;
+  }
 }
 main .features .split .right h4 {
   margin-bottom: 2rem;
@@ -567,8 +578,18 @@ main .features .split .right a {
 main .features .search {
   position: relative;
   margin-bottom: 3rem;
+  background: rgba(104, 201, 186, 0.1);
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+@media (min-width: 1200px) {
+  main .features .search {
+    background: none;
+    margin-right: 0;
+  }
 }
 main .features .search .rect {
+  display: none;
   position: absolute;
   width: 442px;
   height: 358px;
@@ -577,7 +598,13 @@ main .features .search .rect {
   background: url("assets/search.png");
   background-repeat: no-repeat;
 }
+@media (min-width: 1200px) {
+  main .features .search .rect {
+    display: block;
+  }
+}
 main .features .search .img {
+  display: none;
   position: absolute;
   width: 232px;
   height: 211px;
@@ -585,10 +612,24 @@ main .features .search .img {
   top: 6rem;
   background: url("assets/image3.png");
 }
+@media (min-width: 1200px) {
+  main .features .search .img {
+    display: block;
+  }
+}
 main .features .access {
   position: relative;
+  background: rgba(156, 105, 226, 0.1);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+@media (min-width: 1200px) {
+  main .features .access {
+    background: none;
+  }
 }
 main .features .access .rect {
+  display: none;
   position: absolute;
   width: 442px;
   height: 358px;
@@ -597,7 +638,13 @@ main .features .access .rect {
   background: url("assets/access.png");
   background-repeat: no-repeat;
 }
+@media (min-width: 1200px) {
+  main .features .access .rect {
+    display: block;
+  }
+}
 main .features .access .img {
+  display: none;
   position: absolute;
   width: 241px;
   height: 185px;
@@ -605,10 +652,25 @@ main .features .access .img {
   top: 6rem;
   background: url("assets/image4.png");
 }
+@media (min-width: 1200px) {
+  main .features .access .img {
+    display: block;
+  }
+}
 main .features .print {
   position: relative;
+  background: rgba(240, 99, 184, 0.1);
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+@media (min-width: 1200px) {
+  main .features .print {
+    background: none;
+    margin-right: 0;
+  }
 }
 main .features .print .rect {
+  display: none;
   position: absolute;
   width: 442px;
   height: 358px;
@@ -617,7 +679,13 @@ main .features .print .rect {
   background: url("assets/print.png");
   background-repeat: no-repeat;
 }
+@media (min-width: 1200px) {
+  main .features .print .rect {
+    display: block;
+  }
+}
 main .features .print .img {
+  display: none;
   position: absolute;
   width: 245px;
   height: 181px;
@@ -625,10 +693,23 @@ main .features .print .img {
   top: 6rem;
   background: url("assets/image5.png");
 }
+@media (min-width: 1200px) {
+  main .features .print .img {
+    display: block;
+  }
+}
 main .features .security {
   position: relative;
+  background: rgba(45, 156, 219, 0.1);
+  border-radius: 20px;
+}
+@media (min-width: 1200px) {
+  main .features .security {
+    background: none;
+  }
 }
 main .features .security .rect {
+  display: none;
   position: absolute;
   width: 442px;
   height: 358px;
@@ -637,13 +718,24 @@ main .features .security .rect {
   background: url("assets/security.png");
   background-repeat: no-repeat;
 }
+@media (min-width: 1200px) {
+  main .features .security .rect {
+    display: block;
+  }
+}
 main .features .security .img {
+  display: none;
   position: absolute;
   width: 230px;
   height: 201px;
   left: -1rem;
   top: 6rem;
   background: url("assets/image6.png");
+}
+@media (min-width: 1200px) {
+  main .features .security .img {
+    display: block;
+  }
 }
 main .testimonials {
   position: relative;

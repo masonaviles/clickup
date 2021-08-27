@@ -108,7 +108,10 @@ main {
         align-items: center;
 
         h3 {
-            margin-top: 8rem;
+            margin-top: 2rem;
+            @include size-at('large') {
+                margin-top: 8rem;
+            }
         }
 
         > p {
@@ -124,6 +127,10 @@ main {
             flex-direction: column;
             justify-content: flex-start;
             height: 17rem;
+            padding: 2rem;
+            @include size-at('large') {
+                padding: 0;
+            }
             h4 {
                 margin-bottom: 2rem;
             }
@@ -143,7 +150,18 @@ main {
         .search {
             position: relative;
             margin-bottom: 3rem;
+            background: rgb(104, 201, 186, 0.1);
+            border-radius: 20px;
+            margin-right: 1rem;
+            @include size-at('large') {
+                background: none;
+                margin-right: 0;
+            }
             .rect {
+                display: none;
+                @include size-at('large') {
+                    display: block;
+                }
                 position: absolute;
                 width: 442px;
                 height: 358px;
@@ -154,6 +172,10 @@ main {
                 background-repeat: no-repeat;
             }
             .img {
+                display: none;
+                @include size-at('large') {
+                    display: block;
+                }
                 position: absolute;
                 width: 232px;
                 height: 211px;
@@ -165,7 +187,17 @@ main {
         }
         .access {
             position: relative;
+            background: rgb(156, 105, 226, 0.1);
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            @include size-at('large') {
+                background: none;
+            }
             .rect {
+                display: none;
+                @include size-at('large') {
+                    display: block;
+                }
                 position: absolute;
                 width: 442px;
                 height: 358px;
@@ -176,6 +208,10 @@ main {
                 background-repeat: no-repeat;
             }
             .img {
+                display: none;
+                @include size-at('large') {
+                    display: block;
+                }
                 position: absolute;
                 width: 241px;
                 height: 185px;
@@ -187,7 +223,18 @@ main {
         }
         .print {
             position: relative;
+            background: rgb(240, 99, 184, 0.1);
+            border-radius: 20px;
+            margin-right: 1rem;
+            @include size-at('large') {
+                background: none;
+                margin-right: 0;
+            }
             .rect {
+                display: none;
+                @include size-at('large') {
+                    display: block;
+                }
                 position: absolute;
                 width: 442px;
                 height: 358px;
@@ -198,6 +245,10 @@ main {
                 background-repeat: no-repeat;
             }
             .img {
+                display: none;
+                @include size-at('large') {
+                    display: block;
+                }
                 position: absolute;
                 width: 245px;
                 height: 181px;
@@ -209,7 +260,16 @@ main {
         }
         .security {
             position: relative;
+            background: rgb(45, 156, 219, 0.1);
+            border-radius: 20px;
+            @include size-at('large') {
+                background: none;
+            }
             .rect {
+                display: none;
+                @include size-at('large') {
+                    display: block;
+                }
                 position: absolute;
                 width: 442px;
                 height: 358px;
@@ -220,6 +280,10 @@ main {
                 background-repeat: no-repeat;
             }
             .img {
+                display: none;
+                @include size-at('large') {
+                    display: block;
+                }
                 position: absolute;
                 width: 230px;
                 height: 201px;
