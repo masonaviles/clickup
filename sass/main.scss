@@ -1,12 +1,20 @@
 main {
     .hero {
         position: relative;
-        padding: 10rem 0;
+        padding: 2rem 0;
+        @include size-at('large') {
+            padding: 10rem 0;
+        }
         h1 {
             margin-bottom: 2rem;
+            max-width: 100%;
         }
         p {
-            width: 34%;
+            width: 100%;
+            z-index: 3;
+            @include size-at('large') {
+                width: 34%;
+            }
             margin-bottom: 2rem;
         }
         .btn {
@@ -16,12 +24,18 @@ main {
             position: absolute;
             width: 885px;
             height: 468px;
-            left: 21rem;
-            top: 16rem;
+            left: 30%;
+            top: 77%;
             background: url('assets/image1.png');
-            background-size: 100%;
+            background-size: 50%;
             background-repeat: no-repeat;
             overflow: hidden;
+            z-index: -1;
+            @include size-at('large') {
+                left: 21rem;
+                top: 16rem;
+                background-size: 100%;
+            }
         }
     }
     .highlight {
