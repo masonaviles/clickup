@@ -35,5 +35,10 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 32.4px;
+        max-height: 7rem;
+        overflow: scroll;
+        @include size-at('large') {
+            max-height: auto;
+        }
     }
 }

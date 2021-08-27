@@ -297,18 +297,25 @@ main {
     .testimonials {
         position: relative;
         margin-top: 9rem;
-        padding-left: 6rem;
-        height: 44rem;
-        margin-bottom: 10rem;
+        padding-left: 2rem;
+        height: 35rem;
+        margin-bottom: 5rem;
         background: $color-purple;
         border-radius: 50px;
         @include size-at('large') {
             background: none;
+            padding-left: 6rem;
+            height: 44rem;
+            margin-bottom: 10rem;
         }
         h5 {
             color: $white;
-            padding-top: 6rem;
-            padding-bottom: 6rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            @include size-at('large') {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
         }
         .carosel {
             display: flex;
