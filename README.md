@@ -10,7 +10,3 @@ Tech used:
 - `node sass`
 - design mock from Figma
 - deployed to [Netlify](https://mystifying-archimedes-be89df.netlify.app)
-
-Testing:
-- browserstack
-- cypress.js
