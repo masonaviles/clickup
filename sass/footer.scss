@@ -2,7 +2,10 @@ footer {
     font-family: $font-body;
     .try {
         margin: 4rem 0;
-        padding-top: 5rem;
+        padding-top: 0rem;
+        @include size-at('large') {
+            padding-top: 5rem;
+        }
         .left {
             h6 {
                 font-size: 40px;
@@ -19,13 +22,21 @@ footer {
         .right {
             display: flex;
             justify-content: flex-end;
+            flex-direction: column;
             flex-wrap: nowrap;
             align-items: center;
+            margin-top: 2rem;
+            @include size-at('large') {
+                flex-direction: row;
+                margin-top: 0;
+            }
         }
         .btn-pink {
             width: 7rem;
+            margin-bottom: 2rem;
             @include size-at('medium') {
                 margin-right: 2rem;
+                margin-bottom: 0rem;
             }
         }
         .btn-arrow {
@@ -40,12 +51,25 @@ footer {
     .main-footer {
         display: flex;
         justify-content: space-between;
-        margin-top: 8rem;
+        margin-top: 0rem;
         margin-bottom: 5rem;
+        flex-direction: column;
+        @include size-at('large') {
+            flex-direction: row;
+            margin-top: 8rem;
+        }
         div:nth-child(1) {
+            margin-bottom: 2rem;
+            @include size-at('large') {
+                margin-bottom: 0;
+            }
             h6 {
                 margin-left: 4rem;
                 margin-bottom: 5rem;
+                padding-top: 4rem;
+                @include size-at('large') {
+                    padding: 0;
+                }
             }
             .address{
                 margin-bottom: 2rem;
@@ -64,7 +88,10 @@ footer {
             font-size: 1rem;
             line-height: 25.6px;
             font-weight: 900;
-            margin-bottom: 4rem;
+            margin-bottom: 1rem;
+            @include size-at('large') {
+                margin-bottom: 4rem;
+            }
         }
     }
     .footer-links {

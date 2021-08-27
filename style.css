@@ -864,7 +864,12 @@ footer {
 }
 footer .try {
   margin: 4rem 0;
-  padding-top: 5rem;
+  padding-top: 0rem;
+}
+@media (min-width: 1200px) {
+  footer .try {
+    padding-top: 5rem;
+  }
 }
 footer .try .left h6 {
   font-size: 40px;
@@ -880,15 +885,25 @@ footer .try .left p {
 footer .try .right {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  margin-top: 2rem;
+}
+@media (min-width: 1200px) {
+  footer .try .right {
+    flex-direction: row;
+    margin-top: 0;
+  }
 }
 footer .try .btn-pink {
   width: 7rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 600px) {
   footer .try .btn-pink {
     margin-right: 2rem;
+    margin-bottom: 0rem;
   }
 }
 footer .try .btn-arrow {
@@ -902,12 +917,33 @@ footer h6 {
 footer .main-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 8rem;
+  margin-top: 0rem;
   margin-bottom: 5rem;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  footer .main-footer {
+    flex-direction: row;
+    margin-top: 8rem;
+  }
+}
+footer .main-footer div:nth-child(1) {
+  margin-bottom: 2rem;
+}
+@media (min-width: 1200px) {
+  footer .main-footer div:nth-child(1) {
+    margin-bottom: 0;
+  }
 }
 footer .main-footer div:nth-child(1) h6 {
   margin-left: 4rem;
   margin-bottom: 5rem;
+  padding-top: 4rem;
+}
+@media (min-width: 1200px) {
+  footer .main-footer div:nth-child(1) h6 {
+    padding: 0;
+  }
 }
 footer .main-footer div:nth-child(1) .address {
   margin-bottom: 2rem;
@@ -923,7 +959,12 @@ footer .footer-links span, footer .footer-social span {
   font-size: 1rem;
   line-height: 25.6px;
   font-weight: 900;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1200px) {
+  footer .footer-links span, footer .footer-social span {
+    margin-bottom: 4rem;
+  }
 }
 footer .footer-links {
   display: flex;
